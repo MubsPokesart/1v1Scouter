@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <script type='text/javascript' src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <title>Mubs Scouter</title>
+</head>
+<body>
+    <div id="resultsintro">
+        <p><input type="submit" value="getSheet" id="sheetButton" name="sheetButton"></p>
+    </div>
+    <div id="box" name="box" style="background-color: #f2fafc;">
+        <p class="fullBold">Teams:</p>
+        <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 10px;">For the most part this is functional though there are things that may appear in parantheses that might be opponent data<br>(basically Trick, Encore and Disable. If your opponent is faster and they miss, that can also cause some things to not get recorded) so do keep that in mind and check movesets</br><p>
+        <div id="inner_box">
+            <div id='teamdata'></div>
+        </div>
+        <p class="fullBold">Pokemon Usage:</p>
+        <div id="inner_box">
+            <textarea rows="60" cols="60" id="statsbox" name="statsbox" wrap="soft" method="post">{{ mon_data }}</textarea>
+        </div>
+        <script>
+            const scoutInstance = JSON.parse('{{ form_response | tojson | safe }}')
+            const scoutReplays = scoutInstance.replays
+
+            for (let j = 0; j < scoutReplays.length; j++) {
+                let replay = scoutReplays[j]
+                let teamStorage = document.getElementById('teamdata')
+                let newdiv = document.createElement('div')
+                newdiv.innerHTML = formatTeam(replay)
+                teamStorage.append(newdiv)
+            }
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+      <title>Mubs Scouter</title>
+   </head>
+   <body>
+      <div style="margin: auto; width: 50%; padding: 10px;">
+         <div>
+            <p><a href="https://www.smogon.com/dex/ss/formats/1v1/" target=”blank” rel="noopener noreferrer">Smogon 1v1</a> Scouter made by Mubs. Currently in development. Contact me on <a href="https://www.smogon.com/forums/members/mubs.442711/" target=”blank” rel="noopener noreferrer">smogon</a> or on Discord (Mubs#2111) if you have any questions or suggestions.</p>
+            <div id="box" name="box">
+               <p class="fullBold">Replays:</p>
+               <form action="" method="post" id="inner_box">
+                  Seperate them line by line, make sure they have 'genX1v1' in them
+                  <br>Example: https://replay.pokemonshowdown.com/gen81v1-1514681986-3n2t6bckrmwpzwvvyah20yfq7c8ma77pw</br>
+                  <textarea rows="20" cols="60" id="statsbox" name="statsbox" wrap="soft" method="post"></textarea>
+                  <br>Names (seperate by commas): <input type="text" id="names" name="names" method="post"><input type="submit" value="Submit" id="submitButton" name="submitButton"></br>
+               </form>
+               <p class="fullBold">Reference Links:</p>
+               <nav style="font-size: 15px;">
+                  <p class="medBold">1v1 Premier League:</p>
+                  <br><a href="https://www.smogon.com/forums/threads/1v1-premier-league-vi-replays-and-usage-stats.3697909/" target=”blank” rel="noopener noreferrer">VI</a> | <a href="https://www.smogon.com/forums/threads/1v1-premier-league-v-replays-and-usage-stats.3676189/"  target=”blank” rel="noopener noreferrer">V</a> |  <a href="https://www.smogon.com/forums/threads/1v1-pl-iv-replays-usage-stats.3660318/"  target=”blank” rel="noopener noreferrer">IV</a></br>
+                  <p class="medBold">World Cup of 1v1:</p>
+                  <br><a href="https://www.smogon.com/forums/threads/world-cup-of-1v1-vi-replays-and-usage-stats.3705349/" target=”blank” rel="noopener noreferrer">VI</a> | <a href="https://www.smogon.com/forums/threads/world-cup-of-1v1-v-replays-usage-stats.3689193/"  target=”blank” rel="noopener noreferrer">V</a> |  <a href="https://www.smogon.com/forums/threads/world-cup-of-1v1-iv-replays-usage-stats.3667670/"  target=”blank” rel="noopener noreferrer">IV</a></br>
+               </nav>
+            </div>
+         </div>
+   </body>
+   </div>
+   </body>
+</html>

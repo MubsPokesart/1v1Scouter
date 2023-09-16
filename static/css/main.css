@@ -1,0 +1,67 @@
+div {
+	font-family: serif;
+	font-size: 15px;
+}
+nav {
+	padding: 10px;
+	border: 2px solid black;
+	margin-bottom: 2px;
+	text-align: center;
+}
+
+
+.fullBold {
+    font-size: 25px;
+    font-weight: bold;
+	margin: 10px;
+}
+
+.medBold {
+	font-size: 20px; 
+    font-weight: bold;
+	margin-top: 5px;
+	margin-bottom: 0px;
+}
+
+#names {
+	padding-top: 0px;
+}
+
+#sheetButton {
+	width: 100%; 
+	text-align: center;
+}
+
+#box {
+    padding: 10px;
+    padding-top: 0px;
+    border: 2px solid black;
+	background-color: white;
+
+}
+
+#box2 {
+    padding: 10px;
+    padding-top: 0px;
+    border: 2px solid black;
+	background-color: white;
+	white-space: pre-wrap;
+}
+
+#statsbox {
+	padding: 10px;
+	border: 2px solid black;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	background-color:white;
+	list-style-type: none;
+	display: block;
+}
+
+#inner_box {
+	border: 2px solid black;
+	padding: 20px;
+    padding-left: 15px;
+	margin: 10px;
+	background-color: white;
+}
